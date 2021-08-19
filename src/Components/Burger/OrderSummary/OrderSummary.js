@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../../UI/Button/Button';
-import Axuiliary from '../../../hoc/Auxiliary/Auxiliary';
+import Auxiliary from '../../../hoc/Auxiliary/Auxiliary';
 
 const orderSummary = ( props ) => {
     const ingredientSummary = Object.keys( props.ingredients )
@@ -12,7 +12,7 @@ const orderSummary = ( props ) => {
         } );
 
     return (
-        <Axuiliary>
+        <Auxiliary>
             <h3>Your Order</h3>
             <p>A delicious burger with the following ingredients:</p>
             <ul>
@@ -23,7 +23,7 @@ const orderSummary = ( props ) => {
             <Button btnType="Danger" clicked={props.purchaseCancelled}>CANCEL</Button>
             <Button btnType="Success" clicked={props.purchaseContinued}>CONTINUE</Button>
             
-        </Axuiliary>
+        </Auxiliary>
     );
 };
 
